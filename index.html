@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project On Console</title>
+</head>
+<body style="text-align: center;">
+    <h1>Project On Console</h1>
+    <p>Write about VS code and how to set it up.</p>
+    <p>Write about console screen, why it is use?, how to open console screen and how to print everything on console.</p>
+    <p>Answers</p>
+    <p>1.Visual Studio Code is a source-code editor that can be used with a variety of programming languages, including Java, JavaScript, Go, Node.js, Python and C++. It is based on the Electron framework, which is used to develop Node.js Web applications that run on the Blink layout engine. Visual Studio Code employs the same editor component (codenamed "Monaco") used in Azure DevOps (formerly called Visual Studio Online and Visual Studio Team Services). Instead of a project system, it allows users to open one or more directories, which can then be saved in workspaces for future reuse. This allows it to operate as a language-agnostic code editor for any language. It supports a number of programming languages and a set of features that differs per language. Unwanted files and folders can be excluded from the project tree via the settings. Many Visual Studio Code features are not exposed through menus or the user interface but can be accessed via the command palette.</p>
+    <br>
+    <p>2. Follow the following steps to set VS code - </p>   
+    <p>a) Download and install VS Code.</p>
+    <p>b) Create a new file.</p>
+    <p>c) See an overview of the user interface.</p>
+    <p>d) Install support for your favorite programming language.</p>
+    <p>e) Change your keyboard shortcuts and easily migrate from other editors using keymap extensions.</p>
+    <p>f) Customize your editor with themes.</p>
+    <p>g) Explore VS Code features in the Interactive Editor Playground.</p>
+    <br>
+    <p>3. A Web console is a tool which is mainly used to log information associated with a web page like: network requests, javascript, security errors, warnings, CSS etc. It enables us to interact with a web page by executing javascript expression in the contents of the page.</p>
+    <p>4. Right click on the screen and click on inspect option, then select console option in the top bar. Then you will be navigated to the console screen.</p>
+    <p>5. The following ways are some of the format to type print anything in console screen - </p>
+    <p>a) You can type console.log("I am a coder!"); in JS to run anything you types in string to run.</p>
+    <p>b) If you declare a variable and call the variable in console then type console.log(Write the variable name here);.</p>
+    <p>c) If you want to join two variable then first create two variable and then type 
+        var (any_name) = first variable.concat(second variable);, 
+        then in next line type console.log(the name variable name which you gave for the above line);, 
+        then see the output in console screen.
+    </p>
+</body>
+</html>
+<script>
+    console.log("My first console project!");
+
+    var first_name = "Adarsh Kumar ";
+    var last_name = "Dash";
+    var full_name = first_name.concat(last_name);
+    console.log(full_name);
+
+    var s1 = "I love Science";
+    console.log(s1);
+
+    var s2 = s1.replace("Science","Math");
+    console.log(s2);
+
+    var s3 = "Maximum marks scored by me in Science is ";
+    var n1 = Math.max(97.5,100);
+    var science_max_marks = s3.concat(n1);
+    console.log(science_max_marks);
+
+    var s4 = s3.replace("Maximum","Minimum");
+    var n2 = Math.min(97.5,100);
+    var science_min_marks = s4.concat(n2);
+    console.log(science_min_marks);
+
+    var txt1 = "The power of 10 and 3 is ";
+    var power = Math.pow(10,3);
+    var s6 = txt1.concat(power);
+    console.log(s6);
+
+    var square_root = Math.sqrt(25);
+    var txt2 = "Square root of 25 is ";
+    var s7 = txt2.concat(square_root);
+    console.log(s7);
+
+    var txt3 = "i want to be a scientist!"
+    console.log(txt3.toUpperCase());
+
+    var txt4 = "I WANT TO BE A SCIENTIST!"
+    console.log(txt4.toLowerCase());
+
+    var txt = "30 + 10 = ";
+    var a = 10;
+    var b = 30;
+    var sum = a + b;
+    var s5 = txt.concat(sum);
+    console.log(s5);
+
+    var txt5 = txt.replace("+","-");
+    var difference = 30 - 10;
+    var s8 = txt5.concat(difference);
+    console.log(s8);
+
+    var txt5 = txt.replace("+","*");
+    var product = 30 * 10;
+    var s9 = txt5.concat(product);
+    console.log(s9);
+
+    var txt5 = txt.replace("+","/");
+    var quotient = 30 / 10;
+    var s10 = txt5.concat(quotient);
+    console.log(s10);
+</script>
